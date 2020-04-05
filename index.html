@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <ol id="comida">
+        <li id="desayuno">Desayuno</li>
+        <li id="refrigerio">Refrigerio</li>
+        <li id="cena">Cena</li>
+        <li id="sobrante">Sobrante</li>
+        <li id="Comer">Comer</li>
+    </ol>
+    <p>Desayuno, Refrigerio, Almuerzo, Cena, Lonche</p>
+    <script>
+        //COLOCAR EL ALMUERZO DESPUES DE REFRIGERIO CON NODO
+        /*
+        var 
+        elemento = document.createElement('li'),
+        contenido = document.createTextNode('Almuerzo'),
+        lista = document.getElementById('comida'),
+        elementoPadre = document.getElementsByTagName('li')[1].parentNode,
+        contenidoPadre = document.getElementsByTagName('li')[1];
+        elemento.appendChild(contenido);
+        //lista.appendChild(elemento);
+        elementoPadre.insertBefore(elemento , contenidoPadre);*/
+
+        //REEMPLAZAR REFRIGERIO CON ALMUERZO Y ELMINAR SOBRA
+        /*
+        var elemento = document.createElement('li'),
+        contenido = document.createTextNode('Almuerzo'),
+        lista = document.getElementById('comida'),
+        refrigerio = document.getElementById('refrigerio'),
+        sobra = document.getElementById('sobrante');
+        elemento.appendChild(contenido);
+        lista.replaceChild(elemento, refrigerio);
+        lista.removeChild(sobra);*/
+    </script>
+<script src="app.js"></script>
+</body>
+</html>
